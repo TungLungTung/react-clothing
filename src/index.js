@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//// Browser router is a component that we're actually going to wrap arround our application
+import {BrowserRouter} from 'react-router-dom';
+
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
